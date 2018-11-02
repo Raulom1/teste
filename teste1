@@ -1,0 +1,28 @@
+@echo off
+echo.
+echo Escolha um programa para ser aberto:
+echo.
+echo [1] Bloco de Notas
+echo [2] Paint
+echo [3] Calculadora
+set /p opcao=Digite a opcao desejada 
+echo.
+if "%opcao%" == "1" goto op1
+if "%opcao%" == "2" goto op2
+if "%opcao%" == "3" goto op3
+echo.
+:op1
+notepad
+echo O Bloco de Notas foi aberto
+pause > nul
+exit
+:op2
+mspaint
+echo O Paint foi aberto
+pause > nul
+exit
+:op3
+calc
+echo A Calculadora foi aberta
+pause > nul
+exit
